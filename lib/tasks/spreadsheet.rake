@@ -9,14 +9,14 @@ task :spreadsheet => :environment do
   sheet1.each do |row|
     pro_name = row[0]
     Product.create(
-      name:  pro_name
+      name: pro_name
     )
   end
 
   sheet2.each do |row|
     em_name = row[0]
     Employee.create(
-      name:  em_name
+      name: em_name
     )
 
   end
